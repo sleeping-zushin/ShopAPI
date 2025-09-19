@@ -34,8 +34,8 @@ namespace ShopAPI.Controllers
         }
 
 
-        // GET: api/Product/GetById/5
-        [HttpGet("GetById/{id}")]
+        // GET: api/Product/5
+        [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id, [Required] string name)
             // id là path parameter
         {
